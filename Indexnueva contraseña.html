@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+	<div class="barra-superior" style="text-align: center;">
+		<h2>Estrablecer Nueva Contraseña</h2>
+	</div>
+
+	<form>
+		<label>Ingrese su Nueva Contraseña</label><br>
+		<div class="password-container">
+		<input type="password" name="nueva-password">
+		<i class="fa-solid fa-eye" id="toggleNuevaPassword"></i>
+		</div>
+
+		<label>Confirme su Nueva Contraseña</label><br>
+		<div class="password-container">
+			<input type="password" id="confirmarPassword" name="Confirmar-password">
+			<i class="fa-solid fa-eye" id="toggleConfirmarPassword"></i>
+		</div>
+		<br>
+
+		<button type="submit">Modificar Contraseña</button><br><br>
+
+        <a href="indexcu2.html">Ir al Inicio de Sesión para ingresar</a>
+    </form>
+
+    <script>
+        const toggleNueva = document.querySelector('#toggleNuevaPassword');
+        const nuevaPass = document.querySelector('#nuevaPassword');
+
+        toggleNueva.addEventListener('click', function () {
+            const type = nuevaPass.getAttribute('type') === 'password' ? 'text' : 'password';
+            nuevaPass.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        const toggleConfirmar = document.querySelector('#toggleConfirmarPassword');
+        const confirmarPass = document.querySelector('#confirmarPassword');
+
+        toggleConfirmar.addEventListener('click', function () {
+            const type = confirmarPass.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmarPass.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+    <script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        
+        this.classList.toggle('fa-eye-slash');
+    });
+</body>
+</html>
+	</form>
+</body>
+</html>

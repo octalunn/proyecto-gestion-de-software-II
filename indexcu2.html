@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+	<div class="barra-superior" style="text-align: center;">
+		<h2>Bienvenido Sistema de Pedidos</h2>
+	</div>
+	<form>
+		<label>Ingrese Nombre</label><br>
+		<input type="text"/><br>
+		<label>Ingrese Contraseña</label>
+		<div class="password-container">
+		<input type="password" id="password" name="Contraseña"/>
+		<i class="fa-solid fa-eye" id="togglePassword"></i>
+		</div>
+
+		<div class="checkbox-container">
+		<input type="checkbox"> Recordarme 
+		</div>
+
+		<a href="indexcu3.html">¿Olvidaste tu contraseña?</a><br><br>
+		<button>Inicia Sesion</button><br><br>
+
+		<label>¿No tenes cuenta?</label>
+		<a href="indexcu1.html">Registrate aquí</a>
+	</form>
+	<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+</body>
+</html>

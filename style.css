@@ -1,0 +1,211 @@
+body {
+	background: linear-gradient(#070000, #5a0303);
+	background-attachment: fixed;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 100px;
+	box-sizing: border-box;
+}
+ form {
+ 	background-color: rgba(255, 255, 255, 0.07);
+ 	padding: 30px;
+ 	border-radius: 12px;
+ 	max-width: 400px;
+ 	width: 100%;
+ 	box-sizing: border-box;
+ 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+ 	border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+
+.barra-superior {
+	background-color: #000000;
+	color: white;
+	padding: 15px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	height: 90px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+label {
+	display: block;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width:100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.5);
+	outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+background-color: #ffffff !important;
+color: #000000 !important;
+border-color: #ffffff;
+outline: none;
+}
+
+.checkbox-container{
+	display: flex;
+	align-items:  center;
+	gap:8px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+input[type="checkbox"] {
+	width: auto;
+	margin: 0;
+	padding:0;
+}
+
+button,
+input[type="submit"] {
+	width: 100%;
+	background-color: #f8fafc;
+	color: black;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background-color: #000000;
+	color: #ffffff !important;
+}
+
+a {
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 14px;
+	text-decoration: underline;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: #cccccc;
+}
+
+.password-container {
+	position: relative;
+	width: 100%;
+}
+.password-container input {
+	padding-right: 40px;
+	margin-bottom: 15px;
+}
+.password-container i {
+	position: absolute;
+	right: 12px;
+	top: 14px;
+	cursor: pointer;
+	color: black;
+	transition: color 0.2s ease;
+}
+.password-container i:hover{
+	color: grey;
+}
+.catalogo-container {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+	justify-content: center;
+	gap: 25px;
+	padding: 40px 20px;
+	max-width: 1200px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.producto-card {
+	background-color: rgba(255, 255, 255, 0.07);
+	border: 1px solid rgba(255, 255,255, 0.1);
+	border-radius: 12px;
+	padding: 20px;
+	width: 260px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto-titulo {
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 18px;
+	margin: 10px 0;
+}
+.producto-img {
+	width: 100%;
+	height: 160px;
+	object-fit: contain;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+.producto-desc {
+	color: #cccccc;
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+.producto-precio {
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.btn-agregar {
+	width: 100%;
+	background-color: #f8fafc;
+	color: black;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.producto-card:hover {
+	transform: translateY(-30px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
